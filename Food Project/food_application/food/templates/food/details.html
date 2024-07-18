@@ -1,0 +1,22 @@
+{% extends 'food/base.html'%}
+
+{% block body%}
+    <div class="row imagebox" >
+        <div class="col-md-5 offset-md-1">
+            <img  src="{{item.image}}/" class="card border border-dark" height="500px" width="500px">
+        </div>
+        <div class="col-md-6 ">
+            <h1>{{item.name}}</h1>
+            <h2>{{item.description}}</h2>
+            <h3>{{item.address}}</h3>
+            <h4>Price: ₹{{item.price}} for each</h4>
+            <h5>Rating:{{item.rating}}⭐</h5>
+        </div>
+        <div class="btns">
+            <a class="btn btn-secondary" href="{% url 'updateitem' item.id%}">Edit</a>
+            <a class="btn btn-danger" href="{% url 'deleteitem' item.id%}" >Delete</a>
+            <a class="btn btn-warning" href="{% url 'index'%}" >Back</a>
+        </div>
+
+    </div>
+{% endblock%}

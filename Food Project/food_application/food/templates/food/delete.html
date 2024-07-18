@@ -1,0 +1,11 @@
+{% extends 'food/base.html'%}
+
+{% block body%}
+<form class="cont" method="POST">
+    {%csrf_token%}
+    {{form}}
+    <h2 >Are you sure do you want to delete {{item.name}}?</h2>
+    <button class="btn btn-primary">Confirm</button>
+    <a class="btn btn-warning" href="{% url 'index'%}" >Back</a>
+</form>
+{% endblock%}

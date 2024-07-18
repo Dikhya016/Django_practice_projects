@@ -1,0 +1,45 @@
+
+.head{
+    text-align: center;
+}
+.cont{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+    margin: 20px 300px;
+    padding: 20px;
+}
+.head{
+    text-align: center;
+}
+.imagebox{
+    padding: 50px;
+   
+}
+.btns{
+    text-align: center;
+    padding: 20px;
+}
+.contt{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    gap: 10px;
+    margin: 20px 300px;
+    padding: 20px;
+}
+.sub{
+    margin-top:10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.form{
+   margin: 10px 300px;
+}
